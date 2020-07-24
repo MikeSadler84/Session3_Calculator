@@ -12,15 +12,6 @@ let calc = document.querySelector("#gradecalc");
 
 // A function to give the average grade input/output and make the code less cluttered
 
-function gradeLoop(){
-    total=0;
-    for (let i=0;i<grades.length;i++){
-        total= total+grades[i];
-        console.log(total);
-    }
-    avgGrade = parseInt(total / grades.length);
-    console.log(avgGrade);
-}
 
 function myGrades(){
     if(avgGrade >= 97){
