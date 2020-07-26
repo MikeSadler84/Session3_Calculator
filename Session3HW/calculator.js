@@ -13,7 +13,7 @@ let startOver=1
 while(Boolean(startOver)){
 
 let prompt1 = +prompt(`Input the first number.`);
-console.log(prompt1);
+console.log(prompt);
 let prompt2 = +prompt(`Input the second number.`);
 console.log(prompt2);
 let totalAdd = prompt1 + prompt2;

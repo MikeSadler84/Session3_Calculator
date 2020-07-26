@@ -17,6 +17,7 @@ const daysPerYear = 365;
 const secsPerDay = secPerMin * minsPerHour * hoursADay
 const minsPerDay = minsPerHour * hoursADay
 const secsAlive = secsPerDay * daysPerYear * agePrompt;
+let ageInfo;
 console.log(secsAlive);
 const minsAlive = minsPerDay * daysPerYear * agePrompt;
 console.log(minsAlive);
@@ -28,7 +29,8 @@ const weeksAlive = weeksAYear * agePrompt;
 console.log(weeksAlive);
 monthsAlive = monthsPerYear * agePrompt;
 console.log(monthsAlive);
-let ageInfo = document.querySelector(`#alivecalc`);
+
+ageInfo = document.querySelector(`#alivecalc`);
 let titleInfo = document.querySelector(`.title`);
 titleInfo.innerHTML= `<h2>Time Alive Calculator</h2>
     <h3>Instructions</h3>

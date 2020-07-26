@@ -9,9 +9,29 @@ was an invalid input.
 */
 
 let calc = document.querySelector("#gradecalc");
+let prompt1;
+let prompt2;
+let prompt3;
+let prompt4;
+let prompt5;
 
-// A function to give the average grade input/output and make the code less cluttered
+// functions to give the average grade input/output and make the code less cluttered
 
+function promptOne(){
+    prompt1 = +prompt(`Please input grade 1: `);
+}
+function promptTwo(){
+    prompt2 = +prompt(`Please input grade 2: `);
+}
+function promptThree(){
+    prompt3 = +prompt(`Please input grade 3: `);
+}
+function promptFour(){
+    prompt4 = +prompt(`Please input grade 4: `);
+}
+function promptFive(){
+    prompt5 = +prompt(`Please input grade 5: `);
+}
 
 function myGrades(){
     if(avgGrade >= 97){
@@ -93,8 +113,8 @@ let quantityGrades = prompt(`How many different grades do you have?`);
 if(quantityGrades.toUpperCase === `TWO` || quantityGrades === `2`){
 
 
-    let prompt1 = parseInt(prompt(`Please input grade 1: `));
-    let prompt2 = parseInt(prompt(`Please input grade 2: `));
+    promptOne();
+    promptTwo();
     let grades = [prompt1, prompt2];
     console.log(grades);
     
@@ -106,7 +126,7 @@ if(quantityGrades.toUpperCase === `TWO` || quantityGrades === `2`){
     avgGrade = parseInt(total / grades.length);
     console.log(avgGrade);
     
-    myGrades(avgGrade);
+    myGrades();
     startOver=0;
 
     /* 
@@ -118,9 +138,9 @@ if(quantityGrades.toUpperCase === `TWO` || quantityGrades === `2`){
 }else if(quantityGrades.toUpperCase === `THREE` || quantityGrades === `3`){
 
 
-    let prompt1 = parseInt(prompt(`Please input grade 1: `));
-    let prompt2 = parseInt(prompt(`Please input grade 2: `));
-    let prompt3 = parseInt(prompt(`Please input grade 3: `));
+    promptOne();
+    promptTwo();
+    promptThree();
     let grades = [prompt1, prompt2, prompt3];
     console.log(grades);
     
@@ -132,7 +152,7 @@ if(quantityGrades.toUpperCase === `TWO` || quantityGrades === `2`){
     avgGrade = parseInt(total / grades.length);
     console.log(avgGrade);
     
-    myGrades(avgGrade);
+    myGrades();
     startOver=0;
     
     /* 
@@ -144,10 +164,10 @@ if(quantityGrades.toUpperCase === `TWO` || quantityGrades === `2`){
 }else if(quantityGrades.toUpperCase === `FOUR` || quantityGrades === `4`){
 
 
-    let prompt1 = parseInt(prompt(`Please input grade 1: `));
-    let prompt2 = parseInt(prompt(`Please input grade 2: `));
-    let prompt3 = parseInt(prompt(`Please input grade 3: `));
-    let prompt4 = parseInt(prompt(`Please input grade 4: `));
+    promptOne();
+    promptTwo();
+    promptThree();
+    promptFour();
     let grades = [prompt1, prompt2, prompt3, prompt4];
     console.log(grades);
     
@@ -159,7 +179,7 @@ if(quantityGrades.toUpperCase === `TWO` || quantityGrades === `2`){
     avgGrade = parseInt(total / grades.length);
     console.log(avgGrade);
     
-    myGrades(avgGrade);
+    myGrades();
     startOver=0;
 
     /* 
@@ -171,11 +191,11 @@ if(quantityGrades.toUpperCase === `TWO` || quantityGrades === `2`){
 }else if(quantityGrades.toUpperCase === `FIVE` || quantityGrades === `5`){
 
 
-    let prompt1 = parseInt(prompt(`Please input grade 1: `));
-    let prompt2 = parseInt(prompt(`Please input grade 2: `));
-    let prompt3 = parseInt(prompt(`Please input grade 3: `));
-    let prompt4 = parseInt(prompt(`Please input grade 4: `));
-    let prompt5 = parseInt(prompt(`Please input grade 5: `));
+    promptOne();
+    promptTwo();
+    promptThree();
+    promptFour();
+    promptFive();
     let grades = [prompt1, prompt2, prompt3, prompt4, prompt5];
     console.log(grades);
 
@@ -187,7 +207,7 @@ if(quantityGrades.toUpperCase === `TWO` || quantityGrades === `2`){
     avgGrade = parseInt(total / grades.length);
     console.log(avgGrade);
 
-    myGrades(avgGrade);
+    myGrades();
     startOver=0;
 
 }else {
