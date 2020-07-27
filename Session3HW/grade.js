@@ -8,29 +8,37 @@ was an invalid input.
 
 */
 
-let calc = document.querySelector("#gradecalc");
-let prompt1;
-let prompt2;
-let prompt3;
-let prompt4;
-let prompt5;
+// function myMath() {
+//     total=0;
+//     for (let i=0;i<grades.length;i++){
+//         total= total+grades[i];
+//         console.log(total);
+//     }
+//     avgGrade = parseInt(total / grades.length);
+//     console.log(avgGrade);
+// }
 
 // functions to give the average grade input/output and make the code less cluttered
 
 function promptOne(){
     prompt1 = +prompt(`Please input grade 1: `);
+    return prompt1;
 }
 function promptTwo(){
     prompt2 = +prompt(`Please input grade 2: `);
+    return prompt2;
 }
 function promptThree(){
     prompt3 = +prompt(`Please input grade 3: `);
+    return prompt3;
 }
 function promptFour(){
     prompt4 = +prompt(`Please input grade 4: `);
+    return prompt4;
 }
 function promptFive(){
     prompt5 = +prompt(`Please input grade 5: `);
+    return prompt5;
 }
 
 function myGrades(){
@@ -88,6 +96,16 @@ function myGrades(){
         <h2>F</h2>`
     }
 }
+
+
+
+let calc = document.querySelector("#gradecalc");
+let prompt1;
+let prompt2;
+let prompt3;
+let prompt4;
+let prompt5;
+
 
     /*
 
